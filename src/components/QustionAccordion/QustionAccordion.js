@@ -65,7 +65,7 @@ const QustionAccordion = () => {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item className="AccordionQustionBody" eventKey="2">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Header>3. How State Works in React ?</Accordion.Header>
         <Accordion.Body>
           State হল একটি প্লেইন JavaScript অবজেক্ট যা কম্পোনেন্টের বর্তমান
           পরিস্থিতি সম্পর্কে একটি তথ্য উপস্থাপন করতে প্রতিক্রিয়া দ্বারা ব্যবহৃত
