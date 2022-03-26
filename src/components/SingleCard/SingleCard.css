@@ -1,3 +1,54 @@
+.card_wrapper {
+  background-color: #1d1f25;
+  text-align: center;
+  padding: 30px 10px;
+  border-radius: 10px;
+  border-bottom: 2px solid #962040;
+}
+.card_details h3 {
+  color: #ebebec;
+}
+.card_details h5 {
+  color: #149993;
+}
 .image-card {
-  width: 200px;
+  width: 170px;
+  margin-bottom: 10px;
+}
+.btn-add-card {
+  position: relative;
+  outline: none;
+  color: #ebebec;
+  background-color: #962040;
+  font-weight: 700;
+  margin-top: 10px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  border: none;
+  padding: 7px 30px;
+  border-radius: 6px;
+}
+.btn-add-card:hover {
+  background-color: #149993;
+  color: #ebebec;
+}
+.btn-add-card:after {
+  content: "";
+  background: #90ee90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.btn-add-card:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+  outline: none;
 }

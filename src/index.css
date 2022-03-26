@@ -1,12 +1,17 @@
 /* google fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+  outline: none;
+}
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  background-color: #242c3b;
+  background-color: #141518;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
+  max-width: 1400px;
 }
 
 code {

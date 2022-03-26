@@ -1,0 +1,53 @@
+.shoppingCard h2 {
+  color: white;
+}
+
+.shoppingCardButton .btnCard {
+  display: block;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 20px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.shoppingCardButton .btnChooseForMe {
+  border-color: #149993;
+  color: #149993;
+}
+
+.shoppingCardButton .btnChooseAgain {
+  border-color: #962040;
+  color: #962040;
+}
+
+.btnCard:after {
+  content: "";
+  background: transparent;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.btnChooseAgain:after {
+  background: red;
+}
+.btnChooseForMe:after {
+  background: #149993;
+}
+
+.btnCard:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
