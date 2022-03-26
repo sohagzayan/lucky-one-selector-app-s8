@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
+import { AiOutlineShopping } from 'react-icons/ai';
 import './SingleCard.css';
 
 
@@ -13,9 +14,9 @@ const SingleCard = ({product ,handleAddToCard}) => {
             alt= "image"
            />
            <div className="card_details">
-               <h3>{name}</h3>
+               <h4>{name}</h4>
                <h5>Price : <strong>{price}</strong> </h5>
-               <button onClick={()=> handleAddToCard(product)} className='btn-add-card'>ADD TO CARD</button>
+               <button onClick={()=> handleAddToCard(product)} className='btn-add-card'>ADD TO CARD <AiOutlineShopping /></button>
            </div>
            
         </div>
