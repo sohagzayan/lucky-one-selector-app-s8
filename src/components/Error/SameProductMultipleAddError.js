@@ -3,20 +3,20 @@ import { Button, Modal } from 'react-bootstrap';
 
 
 
-const ErrorMaximumAdding = ({maximumAddingError ,setMaximumAddingError }) => {
+const SameProductMultipleAddError = ({DublicatAddError ,setDublicatAddError }) => {
 
     const handleCloseMOdal = ()=>{
-        setMaximumAddingError(false)
+        setDublicatAddError(false)
     }
 
     return (
         <>
         
-        <Modal show={maximumAddingError}>
+        <Modal show={DublicatAddError}>
         <Modal.Header>
           <Modal.Title>Error</Modal.Title>
         </Modal.Header>
-        <Modal.Body>You Can Adding <string>Maximum 4 item</string> . please you can go next steps</Modal.Body>
+        <Modal.Body>This Product Already Added , You Can Dont't Same Product Add Multiple Time</Modal.Body>
         <Modal.Footer>
           <Button onClick={handleCloseMOdal} variant="secondary">
             Close
@@ -27,4 +27,4 @@ const ErrorMaximumAdding = ({maximumAddingError ,setMaximumAddingError }) => {
     );
 };
 
-export default ErrorMaximumAdding;
+export default SameProductMultipleAddError;

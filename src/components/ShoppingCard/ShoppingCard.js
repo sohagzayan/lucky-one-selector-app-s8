@@ -21,7 +21,7 @@ const ShoppingCard = ({addToCardProduct ,setAddToCardProduct}) => {
               </ul>
               <div className="shoppingCardButton">
                   <button className='btnChooseForMe btnCard'>Choose 1 for me</button>
-                  <button className='btnCard btnChooseAgain'>Choose again</button>
+                  <button onClick={()=> setAddToCardProduct([])} className='btnCard btnChooseAgain'>Choose again</button>
               </div>
         </div>
     );

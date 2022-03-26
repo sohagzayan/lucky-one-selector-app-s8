@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ErrorMaximumAdding from '../Error/ErrorMaximumAdding';
+import SameProductMultipleAddError from '../Error/SameProductMultipleAddError';
 import ShoppingCard from '../ShoppingCard/ShoppingCard';
 import SingleCard from '../SingleCard/SingleCard';
 import './Home.css';
@@ -8,6 +9,7 @@ import './Home.css';
 const Home = () => {
     const [addToCardProduct , setAddToCardProduct] = useState([])
     const [maximumAddingError, setMaximumAddingError ] = useState(false)
+    const [DublicatAddError, setDublicatAddError ] = useState(false)
     const [allData , setAllData] = useState([])
     useEffect(()=>{
         fetch('Data.js')
@@ -18,7 +20,8 @@ const Home = () => {
 
     const handleAddToCard = (product)=> {
        if(addToCardProduct.find(pro => pro.id === product.id)){
-        setMaximumAddingError(true)
+        console.log("alredy Added this");
+        setDublicatAddError(true)
        }else{
         if(addToCardProduct.length >= 4){
             console.log('full adding product');
@@ -33,7 +36,8 @@ const Home = () => {
 
     return (
         <div className='product_card_wrapper'>
-            <ErrorMaximumAdding maximumAddingError={maximumAddingError} setMaximumAddingError={setMaximumAddingError} textBox={{title : "Error" , errorSMS: "You Can Adding Maximum 4 item . please you can go next steps"}} />
+            <SameProductMultipleAddError DublicatAddError={DublicatAddError} setDublicatAddError={setDublicatAddError} />
+            <ErrorMaximumAdding maximumAddingError={maximumAddingError} setMaximumAddingError={setMaximumAddingError} />
            <div className="product">
            {
                  allData.map(product => <SingleCard handleAddToCard={handleAddToCard} key={product.id} product={product} /> )   
