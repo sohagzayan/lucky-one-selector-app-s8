@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from "react";
 import ErrorMaximumAdding from "../Error/ErrorMaximumAdding";
 import SameProductMultipleAddError from "../Error/SameProductMultipleAddError";
+import ProductCard from "../ProductCard/ProductCard";
 import QustionAccordion from "../QustionAccordion/QustionAccordion";
 import ShoppingCard from "../ShoppingCard/ShoppingCard";
-import SingleCard from "../SingleCard/SingleCard";
 import "./Home.css";
 
 const Home = () => {
+  // Control State
   const [addToCardProduct, setAddToCardProduct] = useState([]);
   const [maximumAddingError, setMaximumAddingError] = useState(false);
   const [DublicatAddError, setDublicatAddError] = useState(false);
   const [allData, setAllData] = useState([]);
+
+  // Fetching Data 
+
   useEffect(() => {
     fetch("Data.js")
       .then((response) => response.json())
@@ -20,17 +24,17 @@ const Home = () => {
       });
   }, []);
 
+
+  // function 
+
   const handleAddToCard = (product) => {
     if (addToCardProduct.find((pro) => pro.id === product.id)) {
-      console.log("alredy Added this");
       setDublicatAddError(true);
     } else {
       if (addToCardProduct.length >= 4) {
-        console.log("full adding product");
         setMaximumAddingError(true);
       } else {
         setAddToCardProduct([...addToCardProduct, product]);
-        console.log("adding");
       }
     }
   };
@@ -48,7 +52,7 @@ const Home = () => {
       />
       <div className="product">
         {allData.map((product) => (
-          <SingleCard
+          <ProductCard
             handleAddToCard={handleAddToCard}
             key={product.id}
             product={product}

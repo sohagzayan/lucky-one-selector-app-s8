@@ -45,7 +45,7 @@
       "id": "623dd600030eeb9bff3126f0",
       "picture": "./assets/img8.png",
       "price": 1917,
-      "name": "Universal UiiSii C100 Wired Headset"
+      "name": " C100 Wired Headset"
     },
     {
       "id": "623dd600baf9c7f5433aeb8a",

@@ -5,6 +5,10 @@ import './QustionAccordion.css';
 
 
 const QustionAccordion = () => {
+
+
+
+  
     return (
         <Accordion className='AccordionWrapper'  defaultActiveKey={['0']} alwaysOpen>
         <Accordion.Item className='AccordionQustionBody' eventKey="0">

@@ -3,6 +3,13 @@ import ShoppingCardItems from "../ShoppingCardItems/ShoppingCardItems";
 import "./ShoppingCard.css";
 
 const ShoppingCard = ({ addToCardProduct, setAddToCardProduct }) => {
+
+
+
+
+
+  // function ==========================
+
   const handleCardDelete = (id) => {
     setAddToCardProduct(
       addToCardProduct.filter((product) => product.id !== id)

@@ -1,11 +1,14 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
 import { AiOutlineShopping } from 'react-icons/ai';
-import './SingleCard.css';
+import './ProductCard.css';
 
 
-const SingleCard = ({product ,handleAddToCard}) => {
-    const {id , name , picture , price} = product
+const ProductCard = ({product ,handleAddToCard}) => {
+    const {name , picture , price} = product
+
+
+    
     return (
         <div className='card_wrapper'>
            <Image
@@ -23,4 +26,4 @@ const SingleCard = ({product ,handleAddToCard}) => {
     );
 };
 
-export default SingleCard;
+export default ProductCard;
