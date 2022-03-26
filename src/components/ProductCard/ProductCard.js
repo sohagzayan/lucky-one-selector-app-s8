@@ -5,7 +5,7 @@ import './ProductCard.css';
 
 
 const ProductCard = ({product ,handleAddToCard}) => {
-    const {name , picture , price} = product
+    const {name , picture , price} = product;
 
 
     
