@@ -1,0 +1,12 @@
+.AccordionWrapper {
+  margin-top: 100px;
+}
+
+.AccordionQustionBody {
+  background-color: #1d1f25 !important;
+  color: white;
+}
+.AccordionQustionHeader {
+  background-color: #149993 !important;
+  color: red !important;
+}

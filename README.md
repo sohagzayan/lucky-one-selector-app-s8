@@ -1,5 +1,7 @@
 # Heigh Fidelity Sound
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Live Site Link ](https://gentle-rolypoly-91ea14.netlify.app/).
 
-## Available Scripts
+## Live Link
+
+### https://gentle-rolypoly-91ea14.netlify.app/

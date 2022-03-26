@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ErrorMaximumAdding from "../Error/ErrorMaximumAdding";
 import SameProductMultipleAddError from "../Error/SameProductMultipleAddError";
+import QustionAccordion from "../QustionAccordion/QustionAccordion";
 import ShoppingCard from "../ShoppingCard/ShoppingCard";
 import SingleCard from "../SingleCard/SingleCard";
 import "./Home.css";
@@ -35,6 +36,7 @@ const Home = () => {
   };
 
   return (
+    <>
     <div className="product_card_wrapper">
       <SameProductMultipleAddError
         DublicatAddError={DublicatAddError}
@@ -60,6 +62,10 @@ const Home = () => {
         />
       </div>
     </div>
+          
+          <QustionAccordion />
+          
+    </>
   );
 };
 
