@@ -4,7 +4,7 @@
   margin-top: 50px;
 }
 .shoppingCardWrapper {
-  max-height: 400px;
+  max-height: 450px;
   /* position: sticky;
     top: 0; */
   width: 30%;
@@ -37,7 +37,7 @@
     grid-gap: 10px;
   }
 
-  .shoppingCard {
+  .shoppingCardWrapper {
     width: 40%;
   }
 }
@@ -52,7 +52,8 @@
     width: 100%;
   }
 
-  .shoppingCard {
+  .shoppingCardWrapper {
     width: 100%;
+    text-align: center;
   }
 }

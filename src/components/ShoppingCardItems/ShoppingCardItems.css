@@ -1,3 +1,17 @@
 .shoppingCardItem {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.add_product_image {
+  width: 50px;
+}
+
+.btn_delete {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #962040;
+  font-size: 25px;
 }
