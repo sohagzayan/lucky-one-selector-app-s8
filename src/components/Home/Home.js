@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SingleCard from '../SingleCard/SingleCard';
 import './Home.css';
 
 
@@ -15,11 +16,13 @@ const Home = () => {
     return (
         <div className='product_card_wrapper'>
            <div className="product">
-               <h2>Product</h2>
-               {allData.map((item)=> <img src={item.picture} alt="" /> )}
+           {
+                 allData.map(product => <SingleCard product={product} /> )   
+
+                }
            </div>
            <div className="shoppingCard">
-           <h2>shopping Card</h2>
+             <h2>shopping card</h2>
            </div>
         </div>
     );

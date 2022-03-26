@@ -1,12 +1,13 @@
-.product_card_wrapper {
-  display: flex;
-  align-items: center;
-}
-
 .product {
   width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 .shoppingCard {
+  position: sticky;
+  top: 0;
+  max-height: 400px;
   width: 30%;
   background-color: #293242;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
