@@ -25,7 +25,7 @@ const Home = () => {
   }, []);
 
 
-  // function 
+  // function =============
 
   const handleAddToCard = (product) => {
     if (addToCardProduct.find((pro) => pro.id === product.id)) {
