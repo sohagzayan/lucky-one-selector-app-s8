@@ -5,8 +5,8 @@
 }
 .shoppingCardWrapper {
   max-height: 450px;
-  /* position: sticky;
-    top: 0; */
+  position: sticky;
+  top: 0;
   width: 30%;
   background-color: #1d1f25;
   border-radius: 5px;
