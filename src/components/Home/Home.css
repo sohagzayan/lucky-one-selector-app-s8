@@ -47,7 +47,10 @@
     flex-direction: column-reverse;
     align-items: center;
   }
-
+  .shoppingCardWrapper {
+    max-height: 450px;
+    position: static;
+  }
   .product {
     width: 100%;
   }
