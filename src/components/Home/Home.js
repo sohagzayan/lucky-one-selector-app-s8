@@ -13,7 +13,10 @@ const Home = () => {
   useEffect(() => {
     fetch("Data.js")
       .then((response) => response.json())
-      .then((data) => setAllData(data));
+      .then((data) => {
+          const RandomShoing = data.sort(()=> 0.5 - Math.random())
+          setAllData(RandomShoing)
+      });
   }, []);
 
   const handleAddToCard = (product) => {
