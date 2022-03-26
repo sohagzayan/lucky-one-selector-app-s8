@@ -67,9 +67,11 @@ const QustionAccordion = () => {
       <Accordion.Item className="AccordionQustionBody" eventKey="2">
         <Accordion.Header>Accordion Item #2</Accordion.Header>
         <Accordion.Body>
-          স্টেট হল একটি প্লেইন জাভাস্ক্রিপ্ট অবজেক্ট যা কম্পোনেন্টের বর্তমান
+          State হল একটি প্লেইন JavaScript অবজেক্ট যা কম্পোনেন্টের বর্তমান
           পরিস্থিতি সম্পর্কে একটি তথ্য উপস্থাপন করতে প্রতিক্রিয়া দ্বারা ব্যবহৃত
-          হয়।
+          হয়। কিন্তু state fully Component দ্বারা নিয়ন্ত্রিত । এটি প্রায় props এর মতোই | এটা অন্য কোন
+          Component থেকে Access করা যাবে না ততক্ষণ পর্যন্ত যতখন না owner
+          Components decide to pass it .
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
